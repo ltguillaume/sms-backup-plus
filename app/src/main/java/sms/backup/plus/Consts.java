@@ -32,7 +32,7 @@ public final class Consts {
     /** {@link android.provider.Telephony.Sms#CONTENT_URI} */
     public static final Uri SMS_PROVIDER     =  Uri.parse("content://sms");
     public static final Uri CALLLOG_PROVIDER = CallLog.Calls.CONTENT_URI;
-
+/*
     public static class Billing {
         private Billing() {}
 
@@ -48,4 +48,4 @@ public final class Consts {
                 SKU_DONATION_3,
         };
     }
-}
+*/}

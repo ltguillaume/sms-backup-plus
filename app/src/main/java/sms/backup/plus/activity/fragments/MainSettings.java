@@ -11,8 +11,8 @@ import androidx.preference.Preference;
 import com.squareup.otto.Subscribe;
 import sms.backup.plus.App;
 import sms.backup.plus.R;
-import sms.backup.plus.activity.donation.DonationActivity;
-import sms.backup.plus.activity.donation.DonationActivity.DonationStatusListener;
+//import sms.backup.plus.activity.donation.DonationActivity;
+//import sms.backup.plus.activity.donation.DonationActivity.DonationStatusListener;
 import sms.backup.plus.activity.events.AccountAddedEvent;
 import sms.backup.plus.activity.events.AccountRemovedEvent;
 import sms.backup.plus.activity.events.AutoBackupSettingsChangedEvent;
@@ -25,7 +25,7 @@ import java.util.List;
 
 import static sms.backup.plus.App.TAG;
 import static sms.backup.plus.preferences.Preferences.Keys.BACKUP_SETTINGS_SCREEN;
-import static sms.backup.plus.preferences.Preferences.Keys.DONATE;
+//import static sms.backup.plus.preferences.Preferences.Keys.DONATE;
 import static sms.backup.plus.preferences.Preferences.Keys.ENABLE_AUTO_BACKUP;
 import static sms.backup.plus.preferences.Preferences.Keys.INCOMING_TIMEOUT_SECONDS;
 import static sms.backup.plus.preferences.Preferences.Keys.REGULAR_TIMEOUT_SECONDS;
@@ -66,7 +66,7 @@ public class MainSettings extends SMSBackupPreferenceFragment {
     public void onResume() {
         super.onResume();
 
-        checkUserDonationStatus();
+        //checkUserDonationStatus();
         updateAutoBackupPreferences();
         addPreferenceListener(ENABLE_AUTO_BACKUP.key);
     }
@@ -151,7 +151,7 @@ public class MainSettings extends SMSBackupPreferenceFragment {
         return (CheckBoxPreference) findPreference(ENABLE_AUTO_BACKUP.key);
     }
 
-    private void checkUserDonationStatus() {
+/*    private void checkUserDonationStatus() {
         try {
             DonationActivity.checkUserDonationStatus(getContext(), new DonationStatusListener() {
                 @Override
@@ -170,4 +170,4 @@ public class MainSettings extends SMSBackupPreferenceFragment {
             Log.w(TAG, e);
         }
     }
-}
+*/}

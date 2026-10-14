@@ -311,7 +311,7 @@
                 android:defaultValue="off"/>
         </PreferenceCategory>
     </PreferenceScreen>
-
+<!--
     <Preference
             android:key="donate"
             android:title="@string/donate"
@@ -321,4 +321,4 @@
         <intent android:targetClass="sms.backup.plus.activity.donation.DonationActivity"
                 android:targetPackage="sms.backup.plus"/>
     </Preference>
-</PreferenceScreen>
+--></PreferenceScreen>

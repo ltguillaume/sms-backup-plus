@@ -41,7 +41,7 @@ import com.fsck.k9.mail.K9MailLib;
 import com.squareup.otto.Bus;
 import com.squareup.otto.Subscribe;
 import sms.backup.plus.activity.events.AutoBackupSettingsChangedEvent;
-import sms.backup.plus.compat.GooglePlayServices;
+//import sms.backup.plus.compat.GooglePlayServices;
 import sms.backup.plus.preferences.Preferences;
 import sms.backup.plus.receiver.BootReceiver;
 import sms.backup.plus.receiver.SmsBroadcastReceiver;
@@ -73,7 +73,7 @@ public class App extends Application implements Configuration.Provider {
     public void onCreate() {
         super.onCreate();
         setupStrictMode();
-        gcmAvailable = GooglePlayServices.isAvailable(this);
+        gcmAvailable = false;	// GooglePlayServices.isAvailable(this);
         preferences = new Preferences(this);
         preferences.migrate();
 
